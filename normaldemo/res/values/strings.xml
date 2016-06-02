@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AutoClick</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tv_top_tag">有米</string>
+    <string name="tv_version_info">AOS SDK V</string>
+    <string name="btn_show_spot">插屏展示</string>
+    <string name="btn_show_video">视频展示</string>
+    <string name="btn_show_native_spot">原生插屏展示</string>
+    <string name="btn_show_native_video">原生视频展示</string>
+    <string name="tv_bottom_tag">Powered by YouMi</string>
+    <string name="click_auto">辅助点击广告</string>
+
+</resources>

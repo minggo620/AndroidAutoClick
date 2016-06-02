@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:padding="32dip" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ff51534e" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="4dip"
+            android:text="确定要退出？"
+            android:textColor="#ffffffff" />
+
+        <ImageButton
+            android:id="@+id/i2"
+            android:layout_width="200dip"
+            android:layout_height="100dip"
+            android:layout_below="@+id/tv"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bg_exit_dialog" />
+
+        <LinearLayout
+            android:id="@+id/i3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/i2"
+            android:layout_centerHorizontal="true" >
+
+            <Button
+                android:id="@+id/i4"
+                style="?android:attr/buttonStyleInset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dip"
+                android:paddingLeft="32dip"
+                android:paddingRight="32dip"
+                android:text="确定"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/i5"
+                style="?android:attr/buttonStyleInset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="32dip"
+                android:paddingRight="32dip"
+                android:text="取消"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

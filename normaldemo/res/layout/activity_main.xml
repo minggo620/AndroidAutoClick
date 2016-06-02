@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg_activity"
+	>
+
+	<TextView
+		android:id="@+id/tv_top_tag"
+		style="@style/style_text"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="60dp"
+		android:text="@string/tv_top_tag"
+		android:textSize="24sp"
+		/>
+
+	<TextView
+		android:id="@+id/tv_version_info"
+		style="@style/style_text"
+		android:layout_below="@id/tv_top_tag"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="8dp"
+		android:text="@string/tv_version_info"
+		android:textSize="18sp"
+		/>
+
+	<Button
+		android:id="@+id/btn_show_spot"
+		style="@style/style_button"
+		android:layout_centerInParent="true"
+		android:text="@string/btn_show_spot"
+		/>
+
+	<Button
+		android:id="@+id/btn_show_native_spot"
+		style="@style/style_button"
+		android:layout_below="@id/btn_show_spot"
+		android:layout_marginTop="15dp"
+		android:text="@string/btn_show_native_spot"
+		android:visibility="gone"
+		/>
+
+	<Button
+		android:id="@+id/btn_show_video"
+		style="@style/style_button"
+		android:layout_below="@id/btn_show_native_spot"
+		android:layout_marginTop="15dp"
+		android:text="@string/btn_show_video"
+		android:visibility="gone"
+		/>
+
+	<Button
+		android:id="@+id/btn_show_native_video"
+		style="@style/style_button"
+		android:layout_below="@id/btn_show_video"
+		android:layout_marginTop="15dp"
+		android:text="@string/btn_show_native_video"
+		android:visibility="gone"
+		/>
+
+	<LinearLayout
+		android:id="@+id/ll_banner"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:orientation="horizontal"
+		>
+	</LinearLayout >
+
+	<TextView
+		style="@style/style_text"
+		android:layout_above="@id/ll_banner"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="24dp"
+		android:text="@string/tv_bottom_tag"
+		android:textSize="16sp"
+		/>
+
+	<RelativeLayout
+		android:id="@+id/rl_native_ad"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@id/btn_show_spot"
+		android:layout_marginBottom="2dp"
+		android:visibility="gone"
+		>
+
+		<ImageView
+			android:id="@+id/iv_native_ad_image"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			/>
+	</RelativeLayout >
+
+	<RelativeLayout
+		android:id="@+id/rl_video_info"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/rl_native_ad"
+		android:clickable="true"
+		android:visibility="gone"
+		>
+
+		<include layout="@layout/layout_video_info"
+			/>
+	</RelativeLayout >
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/imageView"
+		android:layout_marginTop="38dp"
+		android:layout_below="@+id/btn_show_spot"
+		android:layout_alignRight="@+id/tv_top_tag"
+		android:layout_alignEnd="@+id/tv_top_tag"/>
+
+</RelativeLayout >

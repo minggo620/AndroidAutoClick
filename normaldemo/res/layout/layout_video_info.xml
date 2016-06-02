@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/info_rl_video"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="64dip"
+	android:background="#eeecfa"
+	>
+
+	<ImageView
+		android:id="@+id/info_iv_icon"
+		android:layout_width="50dip"
+		android:layout_height="50dip"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:layout_margin="8dip"
+		/>
+
+	<TextView
+		android:id="@+id/info_tv_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/info_iv_icon"
+		android:layout_marginBottom="2dip"
+		android:layout_toRightOf="@id/info_iv_icon"
+		android:textColor="@android:color/black"
+		android:textSize="14sp"
+		/>
+
+	<LinearLayout
+		android:id="@+id/info_ll_stars"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/info_tv_title"
+		android:layout_marginBottom="2dip"
+		android:layout_toRightOf="@id/info_iv_icon"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		>
+
+		<ImageView
+			android:layout_width="14dip"
+			android:layout_height="14dip"
+			android:layout_marginRight="2dip"
+			android:adjustViewBounds="true"
+			android:scaleType="centerCrop"
+			android:src="@drawable/star_full"
+			/>
+
+		<ImageView
+			android:layout_width="14dip"
+			android:layout_height="14dip"
+			android:layout_marginRight="2dip"
+			android:adjustViewBounds="true"
+			android:scaleType="centerCrop"
+			android:src="@drawable/star_full"
+			/>
+
+		<ImageView
+			android:layout_width="14dip"
+			android:layout_height="14dip"
+			android:layout_marginRight="2dip"
+			android:adjustViewBounds="true"
+			android:scaleType="centerCrop"
+			android:src="@drawable/star_full"
+			/>
+
+		<ImageView
+			android:layout_width="14dip"
+			android:layout_height="14dip"
+			android:layout_marginRight="2dip"
+			android:adjustViewBounds="true"
+			android:scaleType="centerCrop"
+			android:src="@drawable/star_full"
+			/>
+
+		<ImageView
+			android:layout_width="14dip"
+			android:layout_height="14dip"
+			android:layout_marginRight="2dip"
+			android:adjustViewBounds="true"
+			android:scaleType="centerCrop"
+			android:src="@drawable/star_half"
+			/>
+	</LinearLayout >
+
+	<TextView
+		android:id="@+id/info_tv_description"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/info_ll_stars"
+		android:layout_toRightOf="@id/info_iv_icon"
+		android:textColor="#9797A5"
+		android:textSize="12sp"
+		/>
+
+	<ImageButton
+		android:id="@+id/info_btn_close"
+		android:layout_width="20dip"
+		android:layout_height="20dip"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_margin="8dip"
+		android:background="@android:color/transparent"
+		android:scaleType="centerInside"
+		android:src="@drawable/btn_close"
+		/>
+
+	<ImageButton
+		android:id="@+id/info_btn_download"
+		android:layout_width="90dip"
+		android:layout_height="32dip"
+		android:layout_centerVertical="true"
+		android:layout_toLeftOf="@+id/info_btn_close"
+		android:background="@android:color/transparent"
+		android:scaleType="centerInside"
+		android:src="@drawable/btn_download"
+		/>
+
+</RelativeLayout >
