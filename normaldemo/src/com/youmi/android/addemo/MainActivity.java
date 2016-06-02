@@ -87,6 +87,12 @@ public class MainActivity extends Activity implements OnClickListener{
 		},1500);
 	}
 
+	/**
+	 * 1.通过反编译[studio自带有]查看分析o F(o混淆后的类名称,F是o的实例)是广告实例。
+	 * 2.o类中的变量w是Imageview类型。
+	 * 3.就以上足够可以获取插屏广告图片实体，逐一反射获取对应的属性值。
+	 * 4.扩展，如果反编译出现很多属性，那样编写一个反射遍历其中属性，逐一暴力破解。
+	 */
 	private void getO(){
 		SpotManager spotManager = SpotManager.getInstance(mContext);
 		Class clazz = spotManager.getClass();
