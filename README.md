@@ -1,3 +1,7 @@
+##微信公众号:
+
+![学习流程图](https://github.com/minggo620/iOSRuntimeLearn/blob/master/picture/gongzhonghao.jpg?raw=true)  
+
 # 谈Android模拟点击的价值和实现
 “Action！”，欢迎收看这期大型扯谈实用类技术节目，《小明讲故事》，大家好我是小明！今天的主题是如果孙膑、诸葛亮和曾国藩是程序员，会怎么实现Android模拟自动点击。此处可以有Android手机广告，没有赞助商提供，我们继续。很难想象那三位历史大佬是程序员吧？且不说他们，我们撸清下Android模拟点击对我们产生的价值，“唯利是图”一下下！
 
